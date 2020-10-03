@@ -1,0 +1,38 @@
+<section class="section mt-6">
+	<div class="container">
+		<div class="columns is-centered">
+			<div class="column is-5">
+				<% @skin_items.each do |skin_item| %>
+					<div class="card nb-6">
+						<header class="card-header">
+							<p class="card-header-title">
+								<%= skin_item.name %>
+							</p>
+						</header>
+						<div class="card-content">
+							<div class="content">
+								<div class="content average-score">
+									<div class="star-rating nb-2">
+										<div class="star-rating-front" style="width: <%= skin_item.review_score_percentage %>%">★★★★★</div>
+										<div class="star-rating-back">★★★★★</div>
+									</div>
+									<div class="average-score-display ml-3 pt-2">
+										<%= skin_item.avg_score %>点 (<%= skin_item.reviews.count %>件のレビュー)
+									</div>
+								</div>
+							</div>
+						</div>
+						<footer class="card-footer">
+							<%= link_to skin_item_reviews_path(skin_item), class: "button card-footer-item" do %>
+							レビューを見る
+							<% end %>
+							<%= link_to skin_item_path(skin_item), class: "button card-footer-item" do %>
+							レビューを書く
+							<% end %>
+						</footer>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>

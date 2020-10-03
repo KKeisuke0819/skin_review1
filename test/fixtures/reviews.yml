@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  skin_item: one
+  content: MyString
+  score: 1
+
+two:
+  user: two
+  skin_item: two
+  content: MyString
+  score: 1
