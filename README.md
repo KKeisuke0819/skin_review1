@@ -1,9 +1,7 @@
 # Skinreview
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+# Demo
+![jipc5-av26f](https://user-images.githubusercontent.com/57396312/95724179-ff2f4f00-0cb0-11eb-88a5-9627ce550353.gif)
 
 * Ruby version
 
@@ -20,5 +18,3 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
